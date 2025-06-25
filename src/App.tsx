@@ -92,7 +92,7 @@ export const App = () => {
           />
         </div>
 
-        <footer className=" text-center text-sm text-gray-500 dark:text-gray-400 mb-   ">
+        <footer className=" text-center text-sm text-gray-500 dark:text-gray-400 mb-3">
           <div className=" gap-2 flex items-center justify-center">
             <p>&copy; 2025 Jhose</p>
             <a
