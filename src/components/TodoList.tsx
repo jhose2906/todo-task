@@ -42,7 +42,7 @@ export const TodoList = ({
         </TabsList>
       </Tabs>
 
-      <div className="border rounded-lg overflow-hidden dark:border-gray-700 max-h-[calc(100vh-300px)] min-h-[calc(100vh-300px)] bg-white dark:bg-neutral-800 p-4 flex flex-col gap-2 overflow-y-auto">
+      <div className="border rounded-lg overflow-hidden dark:border-gray-700 max-h-[calc(100vh-304px)] min-h-[calc(100vh-304px)] bg-white dark:bg-neutral-800 p-4 flex flex-col gap-2 overflow-y-auto">
         {todos.length === 0 ? (
           <div className="p-8  text-center h-full text-gray-500 dark:text-gray-400">
             No todos found
