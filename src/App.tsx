@@ -94,7 +94,7 @@ export const App = () => {
 
         <footer className=" text-center text-sm text-gray-500 dark:text-gray-400 mb-3">
           <div className=" gap-2 flex items-center justify-center">
-            <p>&copy; 2025 Jhose</p>
+            <p>Jhose Rubaraj | </p>
             <a
               href="https://github.com/jhose2906/todo-task"
               className="underline"

@@ -31,10 +31,10 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
     setIsDarkMode((prev) => !prev);
   }, []);
 
-  // Keyboard shortcut for toggling theme (Ctrl/Cmd + T)
+  // Keyboard shortcut for toggling theme (Ctrl/Cmd + M)
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if ((e.ctrlKey || e.metaKey) && e.key === "t") {
+     if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "m") {
         e.preventDefault();
         toggleTheme();
       }
