@@ -1,54 +1,54 @@
-# React + TypeScript + Vite
+# 📝 To-Do Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A categorized, user-friendly To-Do list application built with **React**, **TypeScript**, **Tailwind CSS**, and **Vite**. This app supports advanced features like dark mode, search, category filtering, local storage persistence, keyboard shortcuts, and more.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 [Click here to view the deployed application](https://iaaxin-jhose-todo.netlify.app/)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## ✨ Features
+
+- Add, delete, and mark to-dos as completed
+- Filter by status: All / Active / Completed
+- Category support (e.g., Work, Personal, Shopping)
+- Due date support
+- Dark mode toggle (using Context API)
+- Local storage persistence
+- Keyboard shortcuts (e.g., add todo, toggle dark mode)
+- Search functionality
+- Form validation using `react-hook-form`
+- Custom hook for managing todos (`useTodos`)
+- Optimized performance with `useMemo` and `useCallback`
+
+---
+
+## 🛠️ Tech Stack
+
+- **React 18** with **TypeScript**
+- **Vite** (for blazing-fast builds)
+- **Tailwind CSS** (for styling)
+- **ShadCN** (for Components)
+- **react-hook-form & Zod** (for form validation)
+- **LocalStorage** (for persistence)
+
+---
+
+## 📦 Installation
+
+Make sure you have **Node.js** and **pnpm** installed.
+
+
+
+```bash
+git clone https://github.com/jhose2906/todo-task
+cd group-todo-app
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```base
+pnpm install
+pnpm run dev
 ```
